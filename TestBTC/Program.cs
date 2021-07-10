@@ -12,6 +12,9 @@ namespace TestBTC
     {
         static void Main(string[] args)
         {
+            //Защищенный канал связи
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+
             string Coin1 = "BTC-NEO";
             string Coin2 = "USDT-NEO";
             string Coin3 = "USDT-BTC";
